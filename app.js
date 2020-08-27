@@ -8,6 +8,8 @@ const app = new Vue({
       "Mr Fluffkins",
       "Snuzz-Lord",
       "Monster Truck",
+      "Riley Bear",
+      "Grump Lord"
     ],
   },
   methods: {},
