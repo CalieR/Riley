@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Riley names</title>
+    <title>Riley app</title>
     <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app">
-      <div>
+      <header>
         <h1>{{ name }}!</h1>
-        <img src="assets/Riley01.jpg" style="width: 500px;" />
-        <p>a.k.a:</p>
-        <div v-for="nickname in nicknames">
-          <h2>{{ nickname }}</h2>
-        </div>
-      </div>
+      </header>
+      <section id="main">
+        <article>
+          <img src="assets/Riley01.jpg" style="width: 500px" />
+        </article>
+        <aside>
+          <div v-for="nickname in nicknames">
+            <h2>{{ nickname }}</h2>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>powered by facelicks 🐶</p>
+      </footer>
     </div>
     <script src="app.js"></script>
   </body>
